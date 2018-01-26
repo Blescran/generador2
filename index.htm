@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#cock{
+position:relative;
+height: 600px;
+width: 1000px;
+}
+#myCanvas{
+float: left;
+position: absolute;
+display: inline-block;
+top: 0;
+}
+#myCanvas2{
+float: left;
+position: absolute;
+display: inline-block;
+top: 0;
+right: 0;
+}
+#myCanvas3{
+float: left;
+position: absolute;
+display: inline-block;
+bottom: 0;
+left: 0;
+}
+#myCanvas4{
+float: left;
+position: absolute;
+display: inline-block;
+bottom: 0;
+right: 0;
+}
+img{
+display: none;
+}
+#asd{
+position: absolute;
+right: 20px;
+top: 20px;
+font-size: 12px;
+}
+
+</style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div id="cock">
+<canvas id="myCanvas" width="642" height="720" style="border:1px solid #000000;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+</div>
+
+<script>
+function getRandomInteger(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+<img id="template" width="500" height="300" src="template2.jpg">
+<img id="1" width="500" height="300" src="img/1.png">
+<img id="2" width="500" height="300" src="img/2.png">
+<img id="3" width="500" height="300" src="img/3.png">
+<img id="4" width="500" height="300" src="img/4.png">
+<img id="5" width="500" height="300" src="img/5.png">
+<img id="6" width="500" height="300" src="img/6.png">
+<img id="7" width="500" height="300" src="img/7.png">
+<img id="8" width="500" height="300" src="img/8.png">
+<img id="9" width="500" height="300" src="img/9.png">
+<img id="10" width="500" height="300" src="img/10.png">
+<img id="11" width="500" height="300" src="img/11.png">
+<img id="12" width="500" height="300" src="img/12.png">
+<img id="13" width="500" height="300" src="img/13.png">
+<img id="14" width="500" height="300" src="img/14.png">
+<img id="15" width="500" height="300" src="img/15.png">
+<img id="16" width="500" height="300" src="img/16.png">
+<img id="17" width="500" height="300" src="img/17.png">
+<img id="18" width="500" height="300" src="img/18.png">
+<img id="19" width="500" height="300" src="img/19.png">
+<img id="20" width="500" height="300" src="img/20.png">
+<img id="21" width="500" height="300" src="img/21.png">
+<img id="22" width="500" height="300" src="img/22.png">
+<img id="23" width="500" height="300" src="img/23.png">
+<img id="24" width="500" height="300" src="img/24.png">
+<img id="25" width="500" height="300" src="img/25.png">
+<img id="26" width="500" height="300" src="img/26.png">
+
+
+
+
+<script>
+
+// GENERATE RANDOM TEXT
+
+
+
+
+window.onclick = function(){
+
+
+
+chara1 = ["Checho","Papu","Adolf","Román","Mauricio","Marcos Peña","Vidal","Aníbal","Cristina","Javier","Scioli","Lee","Rayo",
+		"Lamberto","Donald","Obama","Lionel","Pipa","Boca","River","Marcelo","Funes Chori","Muñeco","Guille","Pressi","July"];
+	
+chara2 = ["el Checho","el Papu Gómez","Adolf Hitler","Riquelme","Macri","Marcos Peña","Vidal","Aníbal Fernández","Cristina","Milei","Scioli","Lee Sin","el rayo Angelici",
+		"Lamberto","Donald Trump","Obama","Messi","el Pipa Higuaín","Boca","River","Tinelli","Funes Mori","el Muñeco Gallardo","Guille","Pressi","July3p"];
+		
+chara3 = ["Checho","Papu","Adolf","Román","Mauricio","Marcos Peña","Vidal","Aníbal","Cristina","Javier","Scioli","Lee","Rayo",
+		"Lamberto","Donald","Obama","Lionel","Pipa","Boca","River","Marcelo","Funes Chori","Muñeco","Guille","Pressi","July"];
+		
+chara4 = ["el Checho","el Papu Gómez","Adolf Hitler","Riquelme","Macri","Marcos Peña","Vidal","Aníbal Fernández","Cristina","Milei","Scioli","Lee Sin","el rayo Angelici",
+		"Lamberto","Donald Trump","Obama","Messi","el Pipa Higuaín","Boca","River","Tinelli","Funes Mori","el Muñeco Gallardo","Guille","Pressi","July3p"];
+		
+ran1 = getRandomInteger(0,chara1.length);
+ran2 = getRandomInteger(0,chara2.length);
+ran3 = getRandomInteger(0,chara3.length);
+ran4 = getRandomInteger(0,chara4.length);
+
+r_chara1 = chara1[ran1];
+r_chara2 = chara2[ran2];
+r_chara3 = chara3[ran3];
+r_chara4 = chara4[ran4];
+
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
+
+var img = document.getElementById("template");
+ctx.drawImage(img, 0, 0);
+
+
+img1 = document.getElementById("1");
+img2 = document.getElementById("2");
+img3 = document.getElementById("3");
+img4 = document.getElementById("4");
+img5 = document.getElementById("5");
+img6 = document.getElementById("6");
+img7 = document.getElementById("7");
+img8 = document.getElementById("8");
+img9 = document.getElementById("9");
+img10 = document.getElementById("10");
+img11 = document.getElementById("11");
+img12 = document.getElementById("12");
+img13 = document.getElementById("13");
+img14 = document.getElementById("14");
+img15 = document.getElementById("15");
+img16 = document.getElementById("16");
+img17 = document.getElementById("17");
+img18 = document.getElementById("18");
+img19 = document.getElementById("19");
+img20 = document.getElementById("20");
+img21 = document.getElementById("21");
+img22 = document.getElementById("22");
+img23 = document.getElementById("23");
+img24 = document.getElementById("24");
+img25 = document.getElementById("25");
+img26 = document.getElementById("26");
+
+bart = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+liza = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+maggie = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+marge = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+sosa = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+
+big1 = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+big2 = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+
+bot1 = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+bot2 = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+bot3 = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+bot4 = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26];
+
+r_bart = getRandomInteger(0,26);
+r_liza = getRandomInteger(0,26);
+r_maggie = getRandomInteger(0,26);
+r_marge = getRandomInteger(0,26);
+r_sosa = getRandomInteger(0,26);
+r_big1 = getRandomInteger(0,26);
+r_big2 = getRandomInteger(0,26);
+r_bot2 = getRandomInteger(0,26);
+r_bot4 = getRandomInteger(0,26);
+
+
+
+ctx.drawImage(bart[r_bart], 147, 300, 48, 62);
+ctx.drawImage(liza[r_liza], 98, 305, 48, 62);
+ctx.drawImage(marge[r_liza], 305, 300, 48, 62);
+ctx.drawImage(maggie[r_maggie], 415, 278, 48, 62);
+ctx.drawImage(sosa[r_sosa], 475, 321, 48, 62);
+ctx.drawImage (big1[ran1], 55, 25, 86, 114); 
+ctx.drawImage (big2[r_big2], 175, 25, 86, 114); 
+ctx.drawImage (big1[ran1], 385, 25, 86, 114); 
+ctx.drawImage (big2[r_big2], 495, 25, 86, 114); 
+ctx.drawImage(bot1[r_liza], 60, 535, 48, 62);
+ctx.drawImage(bot2[r_bot2], 135, 525, 48, 62);
+ctx.drawImage(bot3[r_bot2], 385, 537, 48, 62);
+ctx.drawImage(bot4[r_bot4], 475, 527, 48, 62);
+
+ctx.font = "12px Arial Black";
+ctx.fillStyle = ("#111111");
+ctx.fillText("No te preocupes " + r_chara1 +" algo",10,210);
+ctx.fillText("me dice que " + r_chara2,10,230);
+ctx.fillText("va a tener un pequeñísimo accidente que no",325,210);
+ctx.fillText("le va a permitir jugar con nosotros hoy",325,230);
+ctx.fillText(r_chara3 + " creo que no voy a poder jugar",10,422);
+ctx.fillText("mi rodilla dislocada por " + r_chara4,10,442);
+ctx.fillText("se está quejando",10,462);
+ctx.fillText("- Toma!",325,442);
+ctx.fillText("- UYYY!!",325,462);
+ctx.fillText("ese golpe la colocó",10,685);
+ctx.fillText("EN EL LUGAR CORRECTO!!",10,705);
+ctx.fillText("GRACIAS LLANERO SOLITARIO!!",355,705);
+
+$("#asd").html(ran1 + " " + chara1.length + " " + bart.length);
+}
+</script>
+<br>
+<div id="asd"></div>
+
+
+
+</body>
+</html>
